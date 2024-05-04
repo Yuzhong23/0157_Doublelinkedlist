@@ -179,6 +179,8 @@ void searchData() {
 			 cout << "5. search for a record in the list" << endl;
 			 cout << "6. Exit" << endl;
 			 cout << "\nEnter your choice (1-6) :";
+			 char ch;
+			 cin >> ch;
 		 }
 		 catch (exception& e) {
 			 cout << "Check for the values entered." << endl;

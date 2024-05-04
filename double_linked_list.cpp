@@ -104,6 +104,17 @@ void deleteNode() {
 			START->prev = NULL;	// Step
 		}
 	}
+
+	else {
+		//Node to be deleted is not the first node
+		previous->next = current->next; {	//If there's a successor, update its prev pointer
+			current->next->prev = previous;
+		}
+	}
+
+	// Release the memory of the node marked as current
+	delete current;
+	cout << "\x1b[32mRecord with roll number" << rollNo << "deleted\x1b[0m" << endl;
 }
 
  int main() {

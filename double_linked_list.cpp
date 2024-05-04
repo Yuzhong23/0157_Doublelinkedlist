@@ -2,6 +2,15 @@
 #include <string>
 using namespace std;
 
- int main() {
+struct Node
+{
+	int noMhs;
+	string name;
+	Node* next;
+	Node* prev;
+};
 
+
+ int main() {
+	 
 }
